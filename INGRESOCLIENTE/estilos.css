@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 'Roboto', sans-serif;
+
+}
+body{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-size: cover;
+color: azure;
+}
+.text-center header text-success{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.page {
+    width: 80%;
+    margin: 0 auto;
+}
+.form-group{
+    width: 90%;
+    height: 9;
+    margin: 0 auto;
+}
