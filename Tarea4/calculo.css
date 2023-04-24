@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.cal {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #000000;
+
+}
+input[type=number]{
+    width: 50px;
+
+}
+button {
+    background-color: aqua;
+    color:aliceblue;
+    padding: 12px 20px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+}
+button:hover {
+    background-color: blue;
+}
