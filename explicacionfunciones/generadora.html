@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Función generadora en JavaScript</title>
+  </head>
+  <body>
+    <h1>Función generadora en JavaScript</h1>
+    <p>Los primeros <span id="cantidad"></span> números pares son:</p>
+    <ul id="numeros"></ul>
+    
+    <script>
+      // función generadora para generar los primeros n números pares
+      function* numerosPares(n) {
+        for (let i = 0; i < n; i++) {
+          yield i * 2;
+        }
+      }
+      
+      // obtener la cantidad de números a generar
+      const cantidad = 10;
+      
+      // crear un objeto iterador para la función generadora
+      const iterador = numerosPares(cantidad);
+      
+      // mostrar los números generados en la página
+      const lista = document.getElementById('numeros');
+      const cantidadElemento = document.getElementById('cantidad');
+      cantidadElemento.textContent = cantidad;
+      for (let i = 0; i < cantidad; i++) {
+        const numero = iterador.next().value;
+        const item = document.createElement('li');
+        item.textContent = numero;
+        lista.appendChild(item);
+      }
+    </script>
+  </body>
+</html>
